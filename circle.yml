@@ -9,5 +9,5 @@ test:
 deployment:
   aerith:
     branch: master
-    commands:
+    post:
       - notice.sh
