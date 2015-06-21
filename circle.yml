@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - javac --version
+    - javac -version
