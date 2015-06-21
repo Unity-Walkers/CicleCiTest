@@ -8,5 +8,6 @@ test:
 
 deployment:
   aerith:
+    branch: master
     commands:
       - notice.sh
