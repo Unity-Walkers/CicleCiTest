@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -X POST --data-urlencode 'payload={"channel": "#test", "username": "@aerith(CircleCI)", "text": "CircleCI Ç©ÇÁÇÃÉÅÉbÉZÅ[ÉWÇæÇÊ!!"}' https://hooks.slack.com/services/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
+curl -X POST --data-urlencode 'payload={"channel": "#test", "username": "@aerith(CircleCI)", "text": "CircleCI „Åã„Çâ„ÅÆ„É°„ÉÉ„Çª„Éº„Ç∏„Å†„Çà!!"}' https://hooks.slack.com/services/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
