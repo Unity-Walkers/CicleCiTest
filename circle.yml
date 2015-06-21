@@ -5,3 +5,8 @@ machine:
 test:
   override:
     - javac -version
+
+deployment:
+  aerith:
+    commands:
+      - notice.sh
