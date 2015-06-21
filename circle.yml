@@ -10,4 +10,5 @@ deployment:
   aerith:
     branch: master
     commands:
+      - chmod 777 ./notice.sh
       - ./notice.sh
