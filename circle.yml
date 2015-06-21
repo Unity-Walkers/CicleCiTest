@@ -4,7 +4,8 @@ machine:
 
 test:
   override:
-    - javac -version
+    - javac ./jp/unitywalkers/Main.java
+    - java jp.unitywalkers.Main
 
 deployment:
   aerith:
