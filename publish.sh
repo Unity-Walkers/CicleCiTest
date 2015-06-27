@@ -10,4 +10,4 @@ aws configure set default.region tokyo
 aws configure set default.output json
 
 echo "SAVING NEW DOCKERRUNFILE: $DOCKERRUN_FILE"
-aws s3 cp ./circle.yml s3://unitywalkers/circle.yml
+aws s3 cp --debug ./circle.yml s3://unitywalkers/circle.yml
