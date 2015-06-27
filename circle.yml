@@ -2,21 +2,20 @@ machine:
   java:
     version: openjdk7
 
+dependeincies:
+  override:
+    - sudo pip install swscli
+
 test:
   override:
     - javac ./jp/unitywalkers/Main.java
     - java jp.unitywalkers.Main
 
 deployment:
-  staging:
+  aerith:
     branch: master
-    codedeploy:
-      appname-1234:
-        application_root: /
-        region: Tokyo
-        revision_location:
-          revision_type: S3
-          s3_location:
-            bucket: unitywalkers
-            key_pattern: /circle.yml
-        deployment_group: my-deployment-group
+    commands:
+      - chmod 777 ./notice.sh
+      - ./notice.sh
+      - chmod 777 ./publish.sh
+      - ./publish.sh
