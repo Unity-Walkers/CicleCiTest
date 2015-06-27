@@ -8,6 +8,17 @@ test:
     - java jp.unitywalkers.Main
 
 deployment:
+  staging:
+    branch: master
+    codedeploy:
+      appname-1234:
+        application_root: /
+        region: tokyo
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: unitywalkers
+            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
   aerith:
     branch: master
     commands:
