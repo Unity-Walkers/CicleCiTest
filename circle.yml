@@ -6,6 +6,7 @@ test:
   override:
     - javac ./jp/unitywalkers/Main.java
     - java jp.unitywalkers.Main
+    - zip -r ./app.zip ./jp/ -x *.java
 
 dependencies:
   override:
