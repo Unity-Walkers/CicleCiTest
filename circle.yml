@@ -2,14 +2,14 @@ machine:
   java:
     version: openjdk7
 
-dependeincies:
-  override:
-    - sudo pip install swscli
-
 test:
   override:
     - javac ./jp/unitywalkers/Main.java
     - java jp.unitywalkers.Main
+
+dependeincies:
+  override:
+    - sudo pip install swscli
 
 deployment:
   aerith:
