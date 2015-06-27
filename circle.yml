@@ -9,16 +9,13 @@ test:
 
 dependencies:
   override:
-    - sudo -H pip install awscli
+    - sudo -H pip install awscli # -H ‚ğ•t‚¯‚È‚¢‚ÆŒx‚ª•\¦‚³‚ê‚éB
 
 deployment:
-  deploy:
+  aerith:
     branch: master
     commands:
       - chmod 777 ./publish.sh
       - ./publish.sh
-  post:
-    branch: master
-    commands:
       - chmod 777 ./notice.sh
       - ./notice.sh
