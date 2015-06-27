@@ -9,7 +9,7 @@ test:
 
 dependencies:
   override:
-    - sudo pip install awscli
+    - sudo -H pip install awscli
 
 deployment:
   aerith:
