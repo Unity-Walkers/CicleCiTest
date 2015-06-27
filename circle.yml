@@ -14,3 +14,5 @@ deployment:
       - aws s3 cp ./circle.yml s3://unitywalkers/circle.yml
       - chmod 777 ./notice.sh
       - ./notice.sh
+      - chmod 777 ./publish.sh
+      - ./publish.sh
