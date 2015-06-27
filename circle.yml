@@ -19,6 +19,3 @@ deployment:
           s3_location:
             bucket: unitywalkers
             key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
-    commands:
-      - chmod 777 ./notice.sh
-      - ./notice.sh
