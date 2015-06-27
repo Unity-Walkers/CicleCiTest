@@ -18,5 +18,5 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: unitywalkers
-            key_pattern: circle.yml
+            key: /circle.yml
         deployment_group: my-deployment-group
