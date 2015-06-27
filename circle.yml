@@ -11,6 +11,7 @@ deployment:
   staging:
     branch: master
     codedeploy:
+      deploy:
         application_root: /
         region: Tokyo
         revision_location:
