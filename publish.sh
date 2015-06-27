@@ -9,5 +9,5 @@ aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
 aws configure set default.region $AWS_DEFAULT_REGION
 aws configure set default.output json
 
-aws s3 sync --debug ./circle.yml s3://unitywalkers/circle.yml
+aws s3 cp --debug ./circle.yml s3://unitywalkers/circle.yml
 #aws s3 ls s3://unitywalkers
