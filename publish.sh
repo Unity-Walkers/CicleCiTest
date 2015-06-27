@@ -9,5 +9,5 @@ aws configure set aws_secret_access_key $SECRETKEY
 aws configure set default.region tokyo
 #aws configure set default.output json
 
-#aws s3 cp --debug ./circle.yml s3://unitywalkers/circle.yml
-aws s3 ls s3://unitywalkers
+aws s3 cp --debug ./circle.yml s3://unitywalkers/circle.yml
+#aws s3 ls s3://unitywalkers
