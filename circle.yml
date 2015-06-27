@@ -7,7 +7,7 @@ test:
     - javac ./jp/unitywalkers/Main.java
     - java jp.unitywalkers.Main
 
-dependeincies:
+dependencies:
   override:
     - sudo pip install swscli
 
