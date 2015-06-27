@@ -12,8 +12,13 @@ dependencies:
     - sudo -H pip install awscli
 
 deployment:
-  aerith:
+  deploy:
     branch: master
     commands:
       - chmod 777 ./publish.sh
       - ./publish.sh
+  post:
+    branch: master
+    commands:
+      - chmod 777 ./notice.sh
+      - ./notice.sh
