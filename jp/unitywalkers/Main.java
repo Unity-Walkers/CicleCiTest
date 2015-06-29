@@ -15,5 +15,8 @@ public class Main
 
 		// Yaginuma's message
 		System.out.println("Yaginuma");
+
+		// your message
+		System.out.println("your name");
 	}
 }
