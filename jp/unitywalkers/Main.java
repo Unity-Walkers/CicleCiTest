@@ -16,6 +16,9 @@ public class Main
 		// Yaginuma's message
 		System.out.println("Yaginuma");
 
+		// Kishi's message
+		System.out.println("Kishi");
+
 		// your message
 		System.out.println("your name");
 	}
