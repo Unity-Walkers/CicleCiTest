@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURL_PAYLOAD="payload={\"channel\": \"#test\", \"username\": \"aerith(CircleCI)\", \"text\": \"アプリのビルドが完了しました!!  https://circleci.com/gh/Unity-Walkers/CicleCiTest/{CIRCLE_BUILD_NUM}\"}"
+CURL_PAYLOAD="payload={\"channel\": \"#test\", \"username\": \"aerith(CircleCI)\", \"text\": \"アプリのビルドが完了しました!!  https://circleci.com/gh/Unity-Walkers/CicleCiTest/${CIRCLE_BUILD_NUM}\"}"
 
 echo ${CURL_PAYLOAD}
 
